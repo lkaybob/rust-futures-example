@@ -1,0 +1,15 @@
+[package]
+name = "futures-practice"
+version = "0.1.0"
+authors = ["Lawrence Kay <lkay9495@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures={version="0.3.5", features=["thread-pool"]}
+future-by-example="0.1.0"
+
+[[bin]]
+name="futures-main-example"
+path="src/bin/main.rs"
